@@ -1,5 +1,5 @@
 {
-    "name": "BBDO/yaml-translation",
+    "name": "bbdo/yaml-translation",
     "license": "MIT",
     "description": "Add YAML file support to Laravel TranslationServiceProvider",
     "authors": [
