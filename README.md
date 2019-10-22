@@ -8,7 +8,7 @@ This package uses Symfony/Yaml parser.
 
 Add to your **composer.json** by running :
 
-    composer require proximitybbdo/yaml-translation
+    composer require bbdo/yaml-translation
 
 
 Finally, publish all vendor assets to create a `yaml-translation.php`: 
