@@ -1,6 +1,6 @@
 <?php
 
-namespace Devitek\Core\Translation;
+namespace BBDO\Core\Translation;
 
 use Illuminate\Contracts\Translation\Loader;
 use Illuminate\Filesystem\Filesystem;
@@ -38,7 +38,7 @@ class YamlFileLoader implements Loader
      */
     public function __construct(Filesystem $files, $path)
     {
-        $this->path  = $path;
+        $this->path = $path;
         $this->files = $files;
     }
 
@@ -129,14 +129,14 @@ class YamlFileLoader implements Loader
      */
     protected function parseYamlOrLoadFromCache($file)
     {
-        $cachedir  = storage_path() . '/yaml-translation/';
+        $cachedir = storage_path() . '/yaml-translation/';
         $cachefile = $cachedir . 'cache.' . md5($file) . '.php';
 
         if (@filemtime($cachefile) < filemtime($file)) {
-            $parser  = new Parser();
+            $parser = new Parser();
             $content = null === ($yaml = $parser->parse(file_get_contents($file))) ? [] : $yaml;
 
-            if (! file_exists($cachedir)) {
+            if (!file_exists($cachedir)) {
                 @mkdir($cachedir, 0755);
             }
 

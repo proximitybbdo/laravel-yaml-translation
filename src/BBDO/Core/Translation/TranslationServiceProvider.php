@@ -1,6 +1,6 @@
 <?php
 
-namespace Devitek\Core\Translation;
+namespace BBDO\Core\Translation;
 
 class TranslationServiceProvider extends \Illuminate\Translation\TranslationServiceProvider
 {

@@ -1,29 +1,33 @@
 {
-    "name": "devitek/yaml-translation",
+    "name": "BBDO/yaml-translation",
     "license": "MIT",
     "description": "Add YAML file support to Laravel TranslationServiceProvider",
     "authors": [
         {
+            "name": "Jonathan Pardon",
+            "email": "jonathan.pardon@bbdo.be"
+        },
+        {
             "name": "Thomas SIEFFERT",
-            "email": "thomas.sieffert@devitek.fr"
+            "email": "caporaldead@devitek.fr"
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "illuminate/translation": "~5.5",
-        "illuminate/support": "~5.5",
-        "symfony/yaml": "3.*"
+        "php": ">=7.2",
+        "illuminate/translation": "^6.0",
+        "illuminate/support": "^6.0",
+        "symfony/yaml": "4.*"
     },
     "autoload": {
         "psr-4": {
-            "Devitek\\": "src/Devitek"
+            "BBDO\\": "src/BBDO"
         }
     },
     "extra": {
         "laravel": {
-          "providers": [
-            "Devitek\\Core\\Translation\\TranslationServiceProvider"
-          ]
+            "providers": [
+                "BBDO\\Core\\Translation\\TranslationServiceProvider"
+            ]
         }
     },
     "minimum-stability": "stable"
